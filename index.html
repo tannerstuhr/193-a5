@@ -1,15 +1,34 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1>Europa Clipper Mission</h1>
-    <p>Last year, <a href="https://science.nasa.gov/mission/europa-clipper/" title="NASA Clipper Mission Homepage">NASA launched a mission</a> to take a closer look at one of Jupiter's moons, <strong>Europa</strong>. Scientists
-      believe that the ocean-covered moon could be the best place for hosting life in our solar system (other than Earth of course).
-      The spacecraft, <strong>Clipper</strong>, will do dozens of close, high speed passes of the moon, taking up close pictures and other interesting measurements. 
-      Because it is so far away, we wont reach the moon <strong>until 2030</strong>, but it is something to look forward to!</p>
-      <img src="https://science.nasa.gov/wp-content/uploads/2008/03/europa-junocam-jpg.webp" alt="View of Jupiter’s moon Europa. The moon takes up most of the image, with pure black seen behind the circular horizon. Long crack-like formations cover the surface of the moon's icy body."/>
-  </body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+		<!-- Link to your script file -->
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Field set for Text -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="textArea" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<!-- Field set for Fancify -->
+		<fieldset>
+			<legend>Fancify</legend>
+			<button id="biggerButton">Bigger!</button>
+			<br>
+			<input type="radio" id="fancy" name="style" onchange="applyStyle()">
+			<label for="fancy">FancyShmancy</label>
+			<br>
+			<input type="radio" id="boring" name="style" onchange="applyStyle()">
+			<label for="boring">BoringBetty</label>
+		</fieldset>
+
+		<!-- Additional button -->
+		<button id="mooButton" onclick="applyMoo()">Moo</button>
+		<script src="fancifymytext.js"></script>
+
+	</body>
 </html>
